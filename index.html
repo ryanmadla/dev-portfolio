@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Madlangbayan — Software Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <div>
+          <h1>RYAN MADLANGBAYAN</h1>
+          <p class="role">SOFTWARE DEVELOPER</p>
+          <p class="stack">
+            Mobile &nbsp;·&nbsp; Web &nbsp;·&nbsp; Integrations
+          </p>
+          <p class="meta">
+            Allentown, Pennsylvania &nbsp;|&nbsp; U.S. Permanent Resident
+            &nbsp;·&nbsp; No Sponsorship Required
+          </p>
+        </div>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch theme"
+          >
+            DARK
+          </button>
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/ryanmadla"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="2" y="2" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="7.25" cy="7" r="1.25" fill="currentColor" />
+              <path fill="currentColor" d="M6 10h2.5v8H6zM11 10h2.4v1.1c.6-.9 1.4-1.3 2.6-1.3 2.2 0 3 1.4 3 3.6V18h-2.5v-4.2c0-1.2-.4-1.9-1.4-1.9-1.1 0-1.6.8-1.6 2V18H11z" />
+            </svg>
+            LINKEDIN
+          </a>
+          <a class="email-link" href="mailto:ryanmadla@gmail.com">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" />
+              <path d="m3 5 9 7 9-7" />
+            </svg>
+            EMAIL ME
+          </a>
+          <a class="resume-link" href="RyanM-CV.pdf" download
+            >↓ &nbsp; DOWNLOAD RESUME</a
+          >
+        </div>
+      </header>
+
+      <section class="work-section">
+        <div class="section-heading">
+          <div>
+            <h2>/ PROJECTS</h2>
+            <p>
+              A collection of applications I've developed, covering web,
+              desktop, mobile, APIs, and integrations.
+            </p>
+            <p>
+              Additional projects are not shown due to client confidentiality.
+            </p>
+          </div>
+        </div>
+
+        <p class="project-status" id="projectStatus" role="status">
+          Loading projects…
+        </p>
+        <div class="portfolio-grid" id="portfolioGrid" aria-busy="true"></div>
+        <noscript
+          ><p>Please enable JavaScript to view the projects.</p></noscript
+        >
+      </section>
+      <section class="about-section" aria-labelledby="aboutTitle">
+        <div class="about-copy">
+          <h2 id="aboutTitle">/ ABOUT</h2>
+          <p>
+            I’m a software developer with 16+ years of experience building and
+            maintaining backend, web, mobile, and enterprise applications.
+          </p>
+          <p>
+            My work spans C#/.NET, native iOS, and React Native, with a focus on
+            practical business software, hardware integrations, and supporting
+            applications throughout their lifecycle. I’ve worked with
+            distributed teams and international clients, modernizing existing
+            systems and resolving production issues.
+          </p>
+        </div>
+        <div class="about-focus">
+          <h3>Backend &amp; APIs</h3>
+          <p>C#/.NET, ASP.NET, NodeJS, REST APIs, and SQL databases.</p>
+          <h3>Mobile &amp; hardware</h3>
+          <p>
+            Native iOS, Objective-C, Swift, React Native, and device
+            integrations.
+          </p>
+          <h3>Production &amp; maintenance</h3>
+          <p>
+            Legacy modernization, troubleshooting, database migrations, and
+            CI/CD.
+          </p>
+          <a class="contact-link" href="mailto:ryanmadla@gmail.com">
+            <svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" />
+              <path d="m3 5 9 7 9-7" />
+            </svg>
+            ryanmadla@gmail.com
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close project"
+          data-close-modal
+        >
+          ×
+        </button>
+
+        <div class="modal-content">
+          <div class="modal-copy">
+            <h2 id="modalTitle">Project Title</h2>
+            <p class="project-role" id="modalRole"></p>
+            <p id="modalSummary">Project summary.</p>
+            <p class="modal-tech" id="modalTech">Tech stack</p>
+          </div>
+
+          <figure class="gallery-figure">
+            <div
+              class="modal-gallery"
+              id="modalGallery"
+              aria-label="Project screenshots and demos"
+            ></div>
+            <figcaption
+              class="gallery-caption"
+              id="galleryCaption"
+            ></figcaption>
+          </figure>
+          <div class="gallery-navigation" id="galleryNavigation" hidden>
+            <button
+              class="gallery-arrow"
+              id="galleryPrevious"
+              type="button"
+              aria-label="Previous screenshot or video"
+              aria-controls="modalGallery"
+            >
+              ←
+            </button>
+            <span
+              class="gallery-counter"
+              id="galleryCounter"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span>
+            <button
+              class="gallery-arrow"
+              id="galleryNext"
+              type="button"
+              aria-label="Next screenshot or video"
+              aria-controls="modalGallery"
+            >
+              →
+            </button>
+          </div>
+          <div class="project-details">
+            <section aria-labelledby="contributionTitle">
+              <h3 id="contributionTitle">What I built</h3>
+              <ul id="modalContributions"></ul>
+            </section>
+            <section aria-labelledby="outcomeTitle">
+              <h3 id="outcomeTitle">What it enables</h3>
+              <p id="modalOutcome"></p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

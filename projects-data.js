@@ -1,0 +1,335 @@
+// Generated from projects.json by sync-projects.cjs. Do not edit directly.
+window.portfolioProjectData = {
+  "projects": [
+    {
+      "id": "steel-quoter",
+      "title": "Steel Quoter",
+      "summary": "A Windows desktop application for measuring structural steel drawings imported from PDF files, using the PDFTron library. Records measurements to support review and error tracking.",
+      "tech": [
+        "C#",
+        ".NET",
+        "WinForms",
+        "Windows",
+        "PDFTron",
+        "PDF measurement"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/sq2.png",
+        "alt": "Steel Quoter — screenshot 2"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/sq1.png",
+          "alt": "Steel Quoter — screenshot 1",
+          "caption": "Start a new measurement project or open an existing drawing."
+        },
+        {
+          "type": "image",
+          "src": "assets/sq2.png",
+          "alt": "Steel Quoter — screenshot 2",
+          "caption": "Member schedule alongside the structural drawing for measurement review."
+        },
+        {
+          "type": "image",
+          "src": "assets/sq3.png",
+          "alt": "Steel Quoter — screenshot 3",
+          "caption": "Detailed drawing view with recorded member measurements."
+        }
+      ],
+      "contributions": [
+        "PDF drawing import and display using PDFTron, with a canvas for measuring structural steel members.",
+        "Measurement recording and quality reports for reviewing steel drawings."
+      ],
+      "outcome": "Helps engineers cross-check steel measurements and identify discrepancies during drawing review."
+    },
+    {
+      "id": "hkhs-data-migration",
+      "title": "HKHS Data Migration",
+      "summary": "A data migration application that consolidates MySQL and Oracle databases into a single MySQL database, with a standalone viewer for reviewing reports.",
+      "tech": [
+        "MySQL",
+        "Oracle",
+        "Data migration",
+        "Reporting"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/hkhs1.png",
+        "alt": "HKHS Data Migration — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/hkhs1.png",
+          "alt": "HKHS Data Migration — screenshot 1",
+          "caption": "Report viewer with record filters, export, and print options."
+        }
+      ],
+      "contributions": [
+        "Consolidation of MySQL and Oracle source databases into a single MySQL database.",
+        "A standalone report viewer for reviewing records."
+      ],
+      "outcome": "Brings records from two database systems into one destination, with reports available for review."
+    },
+    {
+      "id": "hksp-interactive",
+      "title": "HKSP Interactive App",
+      "summary": "An interactive 3D experience of Hong Kong Science Park, built with C# and Unity 3D. Uses Xbox Kinect to let visitors explore the park through gesture controls.",
+      "tech": [
+        "C#",
+        "Unity 3D",
+        "Xbox Kinect"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/hksp-poster.jpg",
+        "alt": "HKSP Interactive App — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/hksp.mp4",
+          "alt": "HKSP Interactive App demo",
+          "poster": "assets/hksp-poster.jpg",
+          "caption": "Demo of the Science Park installation using Kinect gesture controls."
+        }
+      ],
+      "contributions": [
+        "An interactive 3D application built with C# and Unity 3D.",
+        "Xbox Kinect gesture controls for exploring the Hong Kong Science Park model."
+      ],
+      "outcome": "Lets visitors explore a 3D model of the park through physical gestures."
+    },
+    {
+      "id": "logtag",
+      "title": "LogTag",
+      "summary": "An Android application that connects to LogTag devices over Bluetooth, enabling users to send and retrieve device data from their phones.",
+      "tech": [
+        "Android",
+        "Bluetooth",
+        "Device integration"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/ltag1.png",
+        "alt": "LogTag — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/ltag1.png",
+          "alt": "LogTag — screenshot 1",
+          "caption": "Welcome screen for connecting to a LogTag device."
+        },
+        {
+          "type": "image",
+          "src": "assets/ltag2.png",
+          "alt": "LogTag — screenshot 2",
+          "caption": "Device list with data retrieval and configuration options."
+        },
+        {
+          "type": "image",
+          "src": "assets/ltag3.png",
+          "alt": "LogTag — screenshot 3",
+          "caption": "Chart summary displaying recorded device data."
+        }
+      ],
+      "contributions": [
+        "Bluetooth communication between the Android application and LogTag devices.",
+        "Device data transfer and retrieval through a mobile interface."
+      ],
+      "outcome": "Lets users interact with LogTag devices and retrieve their data from an Android phone."
+    },
+    {
+      "id": "hkmuseum",
+      "title": "HKMuseum App",
+      "summary": "A mobile museum guide featuring artifact descriptions, image galleries, exhibition details, and visitor information to help users plan their visits.",
+      "tech": [
+        "iOS",
+        "Android"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/hkm1.png",
+        "alt": "HKMuseum App — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/hkm1.png",
+          "alt": "HKMuseum App — screenshot 1",
+          "caption": "Exhibition welcome screen with language selection."
+        },
+        {
+          "type": "image",
+          "src": "assets/hkm2.png",
+          "alt": "HKMuseum App — screenshot 2",
+          "caption": "Tomb Explorer content within the museum guide."
+        },
+        {
+          "type": "image",
+          "src": "assets/hkm3.png",
+          "alt": "HKMuseum App — screenshot 3",
+          "caption": "Plan your visit with location, opening hours, and ticketing information."
+        }
+      ],
+      "contributions": [
+        "A mobile guide with artifact information, exhibition content, and image galleries.",
+        "Visitor information covering opening hours, ticketing, and location."
+      ],
+      "outcome": "Gives museum visitors a way to explore exhibition information and plan their visit."
+    },
+    {
+      "id": "lingao-golf",
+      "title": "Lingao Golf Teaching App",
+      "summary": "An iOS golf coaching application with video recording, visual annotation, and cloud uploads to support instruction and technique review.",
+      "tech": [
+        "iOS",
+        "Video recording",
+        "Video annotation"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/ling1.png",
+        "alt": "Lingao Golf Teaching App — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/ling1.png",
+          "alt": "Lingao Golf Teaching App — screenshot 1",
+          "caption": "Welcome screen for the Lingao golf coaching application."
+        },
+        {
+          "type": "image",
+          "src": "assets/ling2.png",
+          "alt": "Lingao Golf Teaching App — screenshot 2",
+          "caption": "Coach and student sign-in before a coaching session."
+        },
+        {
+          "type": "image",
+          "src": "assets/ling3.png",
+          "alt": "Lingao Golf Teaching App — screenshot 3",
+          "caption": "Video library with options to capture and upload recordings."
+        }
+      ],
+      "contributions": [
+        "Golf video recording and on-video drawing tools.",
+        "Cloud uploads for recorded coaching videos."
+      ],
+      "outcome": "Supports golf instruction with recorded videos and visual annotations for technique review."
+    },
+    {
+      "id": "dpet",
+      "title": "DPET",
+      "summary": "An iOS application that uses augmented reality to measure a child’s height and identify corresponding weight and color zones. Displays dosage reference information for pediatric emergency care.",
+      "tech": [
+        "iOS",
+        "Swift 4.2",
+        "Augmented reality"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/dpet1.jpg",
+        "alt": "DPET — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/dpet1.jpg",
+          "alt": "DPET — screenshot 1",
+          "caption": "Reference information and disclaimer before using the measurement tools."
+        },
+        {
+          "type": "image",
+          "src": "assets/dpet2.png",
+          "alt": "DPET — screenshot 2",
+          "caption": "Camera interface for starting a height measurement."
+        },
+        {
+          "type": "image",
+          "src": "assets/dpet3.gif",
+          "alt": "DPET demo",
+          "caption": "Animated demonstration of the augmented reality measurement interface."
+        }
+      ],
+      "contributions": [
+        "An augmented reality measurement workflow built for iOS using Swift 4.2.",
+        "Height-based weight and color zones with pediatric dosage reference information."
+      ],
+      "outcome": "Combines height measurement and pediatric emergency reference information in a mobile application."
+    },
+    {
+      "id": "ucontrol",
+      "title": "UControl",
+      "summary": "A mobile and tablet application developed in-house for controlling building systems in malls and hotels. Connects to hardware controllers to manage air conditioning, lighting, curtains, and other connected equipment.",
+      "tech": [
+        "iOS",
+        "Hardware integration",
+        "Building automation"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/scp.png",
+        "alt": "UControl mobile interface for controlling air conditioning"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/scp.png",
+          "alt": "UControl mobile interface for controlling air conditioning",
+          "caption": "Mobile air conditioning controls for temperature, mode, and fan speed."
+        },
+        {
+          "type": "image",
+          "src": "assets/sct.png",
+          "alt": "UControl tablet login interface",
+          "caption": "Tablet sign-in screen for the UControl application."
+        },
+        {
+          "type": "video",
+          "src": "assets/sci.mp4",
+          "alt": "UControl application demo",
+          "caption": "Video demonstration of the UControl application."
+        }
+      ],
+      "contributions": [
+        "Mobile and tablet interfaces for controlling air conditioning, lighting, and curtains.",
+        "Communication with hardware controllers as part of an in-house building control application."
+      ],
+      "outcome": "Lets users control connected building equipment in malls and hotels from a phone or tablet."
+    },
+    {
+      "id": "tomorrow-super",
+      "title": "Tomorrow Super",
+      "summary": "A web application for managing Australian superannuation accounts, built with React and .NET. Includes account registration and investment strategy selection.",
+      "tech": [
+        "React.js",
+        "C#",
+        ".NET",
+        "Web"
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/ts-poster.jpg",
+        "alt": "Tomorrow Super — screenshot 1"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/ts.mov",
+          "alt": "Tomorrow Super demo",
+          "poster": "assets/ts-poster.jpg",
+          "caption": "Demo of account registration and investment strategy selection."
+        }
+      ],
+      "contributions": [
+        "An Australian superannuation account management application using React and .NET.",
+        "Account registration and investment strategy selection workflows."
+      ],
+      "outcome": "Lets users register accounts and select investment strategies through a web interface."
+    }
+  ]
+};
