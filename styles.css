@@ -126,6 +126,7 @@ body.modal-open {
 
 .email-link,
 .linkedin-link,
+.github-link,
 .resume-link,
 .theme-toggle {
   border: 1px solid var(--text);
@@ -162,6 +163,7 @@ body.modal-open {
 
 .email-link:hover,
 .linkedin-link:hover,
+.github-link:hover,
 .resume-link:hover,
 .theme-toggle:hover {
   background: var(--text);
@@ -554,6 +556,7 @@ body.modal-open {
 
   .email-link,
   .linkedin-link,
+  .github-link,
   .resume-link,
   .theme-toggle {
     min-width: 0;
